@@ -185,6 +185,7 @@ class _AddNewBlogPageState extends State<AddNewBlogPage> {
                                 .toList(),
                       ),
                     ),
+
                     const SizedBox(height: 20),
                     BlogEditor(
                       controller: titleController,
