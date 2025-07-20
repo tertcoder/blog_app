@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:blog_app/core/common/cubits/app_user/app_user_cubit.dart';
 import 'package:blog_app/core/common/widgets/loader.dart';
+import 'package:blog_app/core/constants/constants.dart';
 import 'package:blog_app/core/theme/app_palette.dart';
 import 'package:blog_app/core/utils/pick_image.dart';
 import 'package:blog_app/core/utils/show_snackbar.dart';
@@ -146,12 +147,7 @@ class _AddNewBlogPageState extends State<AddNewBlogPage> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children:
-                            [
-                                  'Technology',
-                                  'Business',
-                                  'Programming',
-                                  'Entertainment',
-                                ]
+                            Constants.topics
                                 .map(
                                   (c) => Padding(
                                     padding: const EdgeInsets.all(5.0),
